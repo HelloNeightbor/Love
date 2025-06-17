@@ -19,7 +19,7 @@ const client = new Client({
 });
 
 // Đăng nhập bot
-client.login(process.env.DISCORD_TOKEN);
+client.login(os.environ['DISCORD_TOKEN']);
 
 // Bot sẵn sàng
 client.once("ready", async () => {
